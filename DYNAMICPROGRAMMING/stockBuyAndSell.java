@@ -20,26 +20,20 @@ Explanation: In this case, no transactions are done and the max profit = 0. */
 
 import java.util.Scanner;
 class Solution {
-    private int res;
     public int maxProfit(int[] prices) {
-        int pres = 0;
-        for(int i=0;i<prices.length;i++){
-            if (prices[i]<prices[i+1]) {
-                pres = prices[i+1];
-                res = prices[i+1];
-                if(prices[i+1]<prices[i+2]){
-                    pres = prices[i+1];
-                    res = prices[i+1];
-                }
+        int minPrice = Integer.MAX_VALUE;
+        int maxProfit = 0;
+
+        for (int price : prices) {
+            if (price < minPrice) {
+                minPrice = price; 
+            } else if (price - minPrice > maxProfit) {
+                maxProfit = price - minPrice; 
             }
-            else if(prices[i]>prices[i+1]){
-                res = 0;
-            }
-        }return res;
+        }
+        return maxProfit;
     }
 }
-
-
 
 public class stockBuyAndSell {
     public static void main(String[] args) {
