@@ -11,7 +11,6 @@ class Solution{
 
         }return candidate;
     }
-    
 }
 public class majorityOfelement {
     public static void main(String[] args) {
@@ -22,7 +21,7 @@ public class majorityOfelement {
             array[i]=sc.nextInt();
         }
         Solution s = new Solution();
-        System.out.println(s.majority(array));
+        s.majority(array);
         
     }
 }
