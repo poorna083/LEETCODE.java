@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+class solution{
+    
+}
 public class majorityOfelement {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -8,15 +11,7 @@ public class majorityOfelement {
         for(int i=0;i<array.length;i++){
             array[i]=sc.nextInt();
         }
-        int count = 0,candidate = 0;
-        for(int num :array){
-            if (count == 0) {
-                candidate = num;
-            }
-            count +=  (num==candidate) ? 1 : -1;
-            
-
-        }System.out.println(candidate);
+        
         
     }
 }
