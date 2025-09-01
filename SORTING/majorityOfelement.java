@@ -1,6 +1,16 @@
 import java.util.Scanner;
+class Solution{
+    public int majority(int array[]){
+        int count = 0,candidate = 0;
+        for(int num :array){
+            if (count == 0) {
+                candidate = num;
+            }
+            count +=  (num==candidate) ? 1 : -1;
+            
 
-class solution{
+        }return candidate;
+    }
     
 }
 public class majorityOfelement {
@@ -11,7 +21,8 @@ public class majorityOfelement {
         for(int i=0;i<array.length;i++){
             array[i]=sc.nextInt();
         }
-        
+        Solution s = new Solution();
+        System.out.println(s.majority(array));
         
     }
 }
