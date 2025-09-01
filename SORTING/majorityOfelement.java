@@ -14,9 +14,9 @@ public class majorityOfelement {
                 candidate = num;
             }
             count +=  (num==candidate) ? 1 : -1;
-            System.out.println(candidate);
+            
 
-        }
+        }System.out.println(candidate);
         
     }
 }
