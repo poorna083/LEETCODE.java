@@ -1,7 +1,7 @@
 import java.util.Scanner;
 class solution{
     public int missingNumber(int[]nums){
-
+        
     }
 }
 public class missingNumber {
@@ -10,6 +10,6 @@ public class missingNumber {
         int size = sc.nextInt();
         int [] nums = new int[size];
         solution s = new solution();
-        s.
+        s.missingNumber(nums);
     }
 }
