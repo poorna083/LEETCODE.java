@@ -1,7 +1,8 @@
 import java.util.Scanner;
 class Solution{
-    public int longestpalandome(Strung a){
-        
+    public int longestpalandome(String a){
+         res = a.length();
+         return res;
     }
 }
 public class longestPalandrome {
