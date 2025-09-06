@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class Solution {
+class SequenceChecker {
     public boolean sequence(String s, String t) {
         if (s.isEmpty()) return true;
         if (t.isEmpty()) return false;
@@ -15,12 +15,12 @@ class Solution {
     }
 }
 
-public class isSequence {
+public class IsSequence {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
         String t = sc.nextLine();
-        Solution sol = new Solution();
+        SequenceChecker sol = new SequenceChecker();
         System.out.println(sol.sequence(s, t));
     }
 }
