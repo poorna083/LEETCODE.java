@@ -2,8 +2,13 @@ import java.util.Scanner;
 class Solution{
     public boolean sequence(String a,String b){
         if(a.isEmpty() || b.isEmpty()) return false;
-        if (a.contains(b)) return true;
-        return false;
+        int i = 0, j = 0;
+        while (i < a.length() && j < b.length()) {
+            if (a.charAt(i) == b.charAt(j)) {
+                j++;
+            }
+            i++;
+        }return j == b.length();
     }
 }
 public class isSequence {
