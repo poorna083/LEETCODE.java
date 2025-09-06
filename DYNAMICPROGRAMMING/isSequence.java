@@ -2,7 +2,9 @@ import java.util.Scanner;
 class Solution{
     public boolean sequence(String a,String b){
         if(a.isEmpty() || b.isEmpty()) return false;
-        
+        if () {
+            
+        }
     }
 }
 public class isSequence {
