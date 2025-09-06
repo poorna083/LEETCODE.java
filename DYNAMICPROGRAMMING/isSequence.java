@@ -1,22 +1,26 @@
 import java.util.Scanner;
-class Solution{
-    public boolean sequence(String a,String b){
-        if(a.isEmpty() || b.isEmpty()) return false;
+class Solution {
+    public boolean sequence(String s, String t) {
+        if (s.isEmpty()) return true;
+        if (t.isEmpty()) return false;
+
         int i = 0, j = 0;
-        while (i < a.length() && j < b.length()) {
-            if (a.charAt(i) == b.charAt(j)) {
-                j++;
+        while (i < s.length() && j < t.length()) {
+            if (s.charAt(i) == t.charAt(j)) {
+                i++;
             }
-            i++;
-        }return j == b.length();
+            j++;
+        }
+        return i == s.length();
     }
 }
+
 public class isSequence {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String a = sc.nextLine();
-        String b = sc.nextLine();
-        Solution s = new Solution();
-        System.out.println(s.sequence(a, b));
+        String s = sc.nextLine();
+        String t = sc.nextLine();
+        Solution sol = new Solution();
+        System.out.println(sol.sequence(s, t));
     }
 }
