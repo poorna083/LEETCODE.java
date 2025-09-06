@@ -1,7 +1,8 @@
 import java.util.Scanner;
 class Solution{
     public boolean sequence(String a,String b){
-        a.
+        if(a.isEmpty() || b.isEmpty()) return false;
+        
     }
 }
 public class isSequence {
