@@ -5,13 +5,18 @@ class nextgreaterEle{
         for (int i = 0; i < array1.length; i++) {
             for (int j = i+1; j < array2.length; j++) {
                 if (array1[i]>=array2[j]) return array1;
-                if(array1[i]<array2[j]){
-                    
+                    if(array1[i]<array2[j]){
+                        array3[i] = array2[j];
+                        break;
+                    }
                 }
+                if (array3[i] == 0) {
+                    array3[i] = -1;
             }
-        }
+        }return array3;
     }
 }
+
 
 public class nextGreaterelement {
     public static void main(String[] args) {
