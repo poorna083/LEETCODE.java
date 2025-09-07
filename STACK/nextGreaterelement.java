@@ -1,10 +1,11 @@
 import java.util.*;
 class nextgreaterEle{
-    public String greaterElement(int[]array1,int[]array2){
+    public int[] greaterElement(int[]array1,int[]array2){
+        if(array1.length<=0 || array2.length<=0) return  
         for (int i = 0; i < array1.length; i++) {
             for (int j = i+1; j < array2.length; j++) {
-                if (array1[i]) {
-                    
+                if (array1[i]>=array2[j]) {
+                    return array1;
                 }
             }
         }
