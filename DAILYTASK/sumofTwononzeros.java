@@ -1,4 +1,3 @@
-import java.util.Random;
 import java.util.Scanner;
 
 public class sumofTwononzeros {
@@ -9,6 +8,7 @@ public class sumofTwononzeros {
         for(int i=0;i<2;i++){
             array[i]=(n%10);
             array[i+1]=(n/10);    
+            System.out.println(array);
         }
     }
 }
