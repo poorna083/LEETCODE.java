@@ -6,10 +6,9 @@ public class sumofTwononzeros {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int [] array = new int[n];
-        Random r = new Random();
-        for (int i = 0; i <2; i++) {
-            array[i]=r.nextInt(n*2)-n/2;
+        for(int i=0;i<2;i++){
+            array[i]=(n%10);
+            array[i+1]=(n/10);    
         }
-        
     }
 }
