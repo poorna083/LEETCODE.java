@@ -7,17 +7,15 @@ public class uniqueIntigers {
         int n = sc.nextInt();
         int [] array = new int[n];
         int a =0;
-        int sum = 0;
         Random r = new Random();
         for (int i = 0; i < n-1; i++) {
-            array[i]=r.nextInt(21)-10;
+            array[i]=r.nextInt(11)-n;
             a += array[i];
         }
         array[n-1]=(-(a));
-        for(int su:array){
-            sum +=su;
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i]+" ");
         }
-        System.out.println(sum);
         sc.close();
     }
 }
