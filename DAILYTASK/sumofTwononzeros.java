@@ -10,5 +10,6 @@ public class sumofTwononzeros {
         for (int i = 0; i <2; i++) {
             array[i]=r.nextInt(n*2)-n/2;
         }
+        
     }
 }
