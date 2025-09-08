@@ -1,21 +1,19 @@
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class sumofTwononzeros {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int sum = 0;
-        int [] array = new int[2];
-        int [] arr = new int[2];
-        for(int i=0;i<2;i++){
-            array[i]=(n/2);
-            array[i+1]=n-array[i];  
+        int[] array = new int[2];  
+        array[0] = n / 2;
+        array[1] = n - array[0];
+        if (array[0] == 0 || array[1] == 0) {
+            array[0] = 1;
+            array[1] = n - 1;
         }
-        for (int i = 0; i < 2; i++) {
-            arr[i]=array[i];
-            arr[i+1]=array[i+1];
-        }
-        System.out.println(arr);
+        System.out.println(Arrays.toString(array));
+
         sc.close();
     }
 }
