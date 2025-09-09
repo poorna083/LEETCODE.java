@@ -1,7 +1,11 @@
 import java.util.*;
 class SumOfTwo{
     public int [] sumoftwo(int [] nums,int target){
-        
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = i+1; j < nums.length; j++) {
+                
+            }
+        }
     }
 }
 public class twoSum {
@@ -14,7 +18,7 @@ public class twoSum {
             nums[i]=sc.nextInt();
         }
         SumOfTwo st = new SumOfTwo();
-        st.
+        st.sumoftwo(nums, target);
         sc.close();
     }
 }
