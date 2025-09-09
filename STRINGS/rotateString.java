@@ -3,8 +3,11 @@ class rotatestr{
     public boolean rotatstr(String s,String goal){
         if(s.length()!=goal.length())return false;
         else if(s.length()==goal.length()){
-                char[] s1 = s.toCharArray();
-                char[] s2 = s.toCharArray();
+            for (int i = 0; i < s.length(); i++) {
+                for (int j = 0; j < goal.length(); j++) {
+                    
+                }
+            }
             
         }
     }
