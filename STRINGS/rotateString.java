@@ -2,12 +2,12 @@ import java.util.*;
 class rotatestr{
     public boolean rotatstr(String s,String goal){
         if(s.length()!=goal.length())return false;
-        if(s.contentEquals(goal)){
-            for (int i = 0; i < .length; i++) {
-                
-            }
+        else if(s.length()==goal.length()){
+                char[] s1 = s.toCharArray();
+                char[] s2 = s.toCharArray();
+            
         }
-    }return true;
+    }
 }
 public class rotateString {
     public static void main(String[] args) {
