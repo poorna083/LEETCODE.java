@@ -4,8 +4,8 @@ class rotatestr{
         if(s.length()!=goal.length())return false;
         else if(s.length()==goal.length()){
             String dup = s + s;
-            if(!(dup.contains(goal)))return false;   
-        }return true;
+            if(dup.contains(goal))return true;   
+        }return false;
     }
 }
 public class rotateString {
