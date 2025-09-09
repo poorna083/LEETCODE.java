@@ -5,7 +5,9 @@ class rotatestr{
         else if(s.length()==goal.length()){
             for (int i = 0; i < s.length(); i++) {
                 for (int j = 0; j < goal.length(); j++) {
-                    
+                    if (s.charAt(i)==goal.charAt(i)) {
+                        
+                    }
                 }
             }
             
