@@ -12,9 +12,9 @@ class SumOfTwo{
 }
 public class twoSum {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int size = sc.nextInt();
+        Scanner sc = new Scanner(System.in);     
         int target = sc.nextInt();
+        int size = sc.nextInt();
         int [] nums = new int[size];
         for (int i = 0; i < nums.length; i++) {
             nums[i]=sc.nextInt();
