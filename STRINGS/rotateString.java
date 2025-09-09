@@ -3,7 +3,9 @@ class rotatestr{
     public boolean rotatstr(String s,String goal){
         if(s.length()!=goal.length())return false;
         if(s.contentEquals(goal)){
-            
+            for (int i = 0; i < .length; i++) {
+                
+            }
         }
     }return true;
 }
