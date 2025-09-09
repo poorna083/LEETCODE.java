@@ -20,7 +20,7 @@ public class twoSum {
             nums[i]=sc.nextInt();
         }
         SumOfTwo st = new SumOfTwo();
-        st.sumoftwo(nums, target);
+        System.out.println(Arrays.toString(st.sumoftwo(nums, target)));
         sc.close();
     }
 }
