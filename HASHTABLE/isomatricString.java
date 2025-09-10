@@ -2,8 +2,10 @@ import java.util.Scanner;
  class InnerisomatricString {
     public boolean innerisometric(String s,String t){
         if(s.length()==t.length()||s.isEmpty()||t.isEmpty())return false;
-        
-    }return true;
+        else if(s.length()==t.length()){
+
+        }return true;
+    }
     
 }
 
