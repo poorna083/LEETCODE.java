@@ -8,11 +8,11 @@ import java.util.Scanner;
                 Set <Integer> s = new HashSet<>();
                 for (Integer integer : s) {
                     if (s.add(integer)) {
-                        if((i-j)<=k)
+                        if((i-j)<=k) return true;
                     }
                 }
             }
-        }
+        }return false;
     }
     
 }
