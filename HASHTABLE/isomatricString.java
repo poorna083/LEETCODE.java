@@ -3,7 +3,8 @@ import java.util.Scanner;
     public boolean innerisometric(String s,String t){
         if(s.length()==t.length()||s.isEmpty()||t.isEmpty())return false;
         else if(s.length()==t.length()){
-
+            char [] i = s.toCharArray();
+            char [] j = s.toCharArray();
         }return true;
     }
     
