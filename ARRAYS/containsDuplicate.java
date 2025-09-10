@@ -1,7 +1,18 @@
+import java.util.HashSet;
+import java.util.Set;
 import java.util.Scanner;
  class InnercontainsDuplicate {
     public boolean containsduplicate(int k , int[]nums){
-
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = 0; j < nums.length; j++) {
+                Set <Integer> s = new HashSet<>();
+                for (Integer integer : s) {
+                    if (s.add(integer)) {
+                        if((i-j)<=k)
+                    }
+                }
+            }
+        }
     }
     
 }
@@ -17,6 +28,6 @@ public class containsDuplicate {
             nums[i]=sc.nextInt();
         }
         int k = sc.nextInt();
-        
+
     }
 }
