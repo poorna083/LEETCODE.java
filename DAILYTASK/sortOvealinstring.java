@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 class ovealsort{
     public String ovealSorting(String s) {
-        fint n = s.length();
+        int n = s.length();
         ArrayList<Character> vow = new ArrayList<>();
         ArrayList<Integer> pos = new ArrayList<>();
         
