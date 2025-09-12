@@ -1,26 +1,22 @@
 import java.util.*;
 
 class insertionoftwo {
-    public int[] insertionoftwoArray(int[] nums1, int[] nums2) {
-        Set<Integer> set1 = new HashSet<>();
+    public int[] intersect(int[] nums1, int[] nums2) {
+        Map<Integer, Integer> count = new HashMap<>();
         for (int n : nums1) {
-            set1.add(n);
+            count.put(n, count.getOrDefault(n, 0) + 1);
         }
-
-        Set<Integer> result = new HashSet<>();
+        List<Integer> result = new ArrayList<>();
         for (int n : nums2) {
-            if (set1.contains(n)) {
-                result.add(n); 
+            if (count.getOrDefault(n, 0) > 0) {
+                result.add(n);
+                count.put(n, count.get(n) - 1);
             }
         }
-
-        
         int[] intersection = new int[result.size()];
-        int i = 0;
-        for (int n : result) {
-            intersection[i++] = n;
+        for (int i = 0; i < result.size(); i++) {
+            intersection[i] = result.get(i);
         }
-
         return intersection;
     }
 }
