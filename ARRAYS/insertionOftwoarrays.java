@@ -1,6 +1,7 @@
 import java.util.Scanner;
 class insertionoftwo{
     public int[] insertionoftwoArray(int [] nums1,int [] nums2){
+        int[] duplicate = new int[nums1.length+nums2.length];
         
     }
 }
