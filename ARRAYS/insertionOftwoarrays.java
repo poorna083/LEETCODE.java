@@ -1,7 +1,7 @@
 import java.util.Scanner;
 class insertionoftwo{
     public int[] insertionoftwoArray(int [] nums1,int [] nums2){
-
+        
     }
 }
 
@@ -20,6 +20,7 @@ public class insertionOftwoarrays {
         for (int i = 0; i < nums2.length; i++) {
             nums2[i]=sc.nextInt();
         }
-        
+        insertionoftwo it = new insertionoftwo();
+        it.insertionoftwoArray(nums1, nums2);
     }
 }
