@@ -2,7 +2,6 @@ import java.util.*;
 
 class insertionoftwo {
     public int[] insertionoftwoArray(int[] nums1, int[] nums2) {
-        // Use HashSet to store unique elements
         Set<Integer> set1 = new HashSet<>();
         for (int n : nums1) {
             set1.add(n);
@@ -11,11 +10,11 @@ class insertionoftwo {
         Set<Integer> result = new HashSet<>();
         for (int n : nums2) {
             if (set1.contains(n)) {
-                result.add(n); // intersection
+                result.add(n); 
             }
         }
 
-        // Convert Set -> Array
+        
         int[] intersection = new int[result.size()];
         int i = 0;
         for (int n : result) {
