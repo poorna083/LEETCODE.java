@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 class insertionoftwo{
     public int[] insertionoftwoArray(int [] nums1,int [] nums2){
@@ -5,6 +6,7 @@ class insertionoftwo{
         for (int i = 0; i < duplicate.length; i++) {
             duplicate[i]= nums1[i]+nums2[i];
         }
+        Arrays.sort(duplicate);
         return duplicate;
     }
 }
@@ -25,6 +27,6 @@ public class insertionOftwoarrays {
             nums2[i]=sc.nextInt();
         }
         insertionoftwo it = new insertionoftwo();
-        it.insertionoftwoArray(nums1, nums2);
+        System.out.println(it.insertionoftwoArray(nums1, nums2));
     }
 }
