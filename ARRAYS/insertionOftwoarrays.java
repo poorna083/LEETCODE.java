@@ -1,9 +1,9 @@
 import java.util.Scanner;
 class insertionoftwo{
-    public int[] insertionoftwoArray(int [] nums1,int [] nums2,Scanner sc){
+    public int[] insertionoftwoArray(int [] nums1,int [] nums2){
         int[] duplicate = new int[nums1.length+nums2.length];
         for (int i = 0; i < duplicate.length; i++) {
-            duplicate[i]= sc.nextInt();
+            duplicate[i]= nums1[i]+nums2[i];
         }
         return duplicate;
     }
@@ -25,6 +25,6 @@ public class insertionOftwoarrays {
             nums2[i]=sc.nextInt();
         }
         insertionoftwo it = new insertionoftwo();
-        it.insertionoftwoArray(nums1, nums2,sc);
+        it.insertionoftwoArray(nums1, nums2);
     }
 }
