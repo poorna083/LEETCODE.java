@@ -17,7 +17,7 @@ class insertionoftwo {
         for (int i = 0; i < result.size(); i++) {
             intersection[i] = result.get(i);
         }
-        return intersection
+        return intersection;
     }
 }
 
