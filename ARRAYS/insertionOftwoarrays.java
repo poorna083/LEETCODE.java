@@ -9,7 +9,7 @@ class insertionoftwo{
         Arrays.sort(duplicate);
         for (int i = 0; i < duplicate.length; i++) {
             for (int j = i+1; j < duplicate.length; j++) {
-                if (duplicate[i]=duplicate[j]) {
+                if (duplicate[i]==duplicate[j]) {
                     
                 }
             }
