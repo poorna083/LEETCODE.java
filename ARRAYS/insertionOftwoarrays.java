@@ -5,6 +5,7 @@ class insertionoftwo{
         for (int i = 0; i < duplicate.length; i++) {
             duplicate[i]= sc.nextInt();
         }
+        return duplicate;
     }
 }
 
