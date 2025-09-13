@@ -1,4 +1,9 @@
 import java.util.Scanner;
+class FrequentVowel{
+    public int InnermostfrequentVowelandconsonent {
+        
+    }
+}
 
 public class mostfrequentVowelandconsonent {
     public static void main(String[] args) {
