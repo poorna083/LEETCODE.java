@@ -1,12 +1,12 @@
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.Set;
 class FrequentVowel{
     public int InnermostfrequentVowelandconsonent(String s) {
-        Map<Character,Integer> mp = new HashMap<>();
-        for (int i = 0; i < s.length(); i++) {
-            mp.get(s);
-        }
+        int [] freq = new int[26];
+        int maxVowel = 0; int maxConso = 0;
+        
     }
 }
 
