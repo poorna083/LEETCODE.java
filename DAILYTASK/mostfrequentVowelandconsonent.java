@@ -1,7 +1,9 @@
 import java.util.Scanner;
 class FrequentVowel{
     public int InnermostfrequentVowelandconsonent(String s) {
-        
+        for (int i = 0; i < s.length(); i++) {
+            
+        }
     }
 }
 
