@@ -9,6 +9,9 @@ class FrequentVowel{
         for(char c : s.toCharArray()){
             int i = c - 'a';
             freq[i]++;
+            if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u'){
+                maxVowel = max(maxVowel ,freq[i]);
+            }
         }
         
     }
