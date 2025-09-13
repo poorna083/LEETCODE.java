@@ -6,6 +6,10 @@ class FrequentVowel{
     public int InnermostfrequentVowelandconsonent(String s) {
         int [] freq = new int[26];
         int maxVowel = 0; int maxConso = 0;
+        for(char c : s.toCharArray()){
+            int i = c - 'a';
+            freq[i]++;
+        }
         
     }
 }
