@@ -10,8 +10,12 @@ class FrequentVowel{
             int i = c - 'a';
             freq[i]++;
             if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u'){
-                maxVowel = max(maxVowel ,freq[i]);
+                maxVowel = Math.max(maxVowel ,freq[i]);
             }
+            else {
+                maxConso = Math.max(maxConso, freq[i]);
+            }
+            return maxVowel + maxConso;
         }
         
     }
