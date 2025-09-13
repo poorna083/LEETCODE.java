@@ -10,6 +10,6 @@ public class mostfrequentVowelandconsonent {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
         FrequentVowel f = new FrequentVowel();
-        
+        f.InnermostfrequentVowelandconsonent(s);
     }
 }
