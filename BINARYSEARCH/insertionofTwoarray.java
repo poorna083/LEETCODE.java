@@ -1,25 +1,29 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.*;
 
 class InnerinsertionofTwoarray {
-    public int[] intersection(int[] array1, int[] array2) {
-        ArrayList<Integer> arrayList = new ArrayList<>();
-        for (int i = 0; i < array1.length; i++) {
-            for (int j = 0; j < array2.length; j++) {
-                if(array1[i] == array2[j]){
-                    arrayList.add(array1[i]);
-                    break; 
-                }
+    public int[] intersection(int[] nums1, int[] nums2) {
+        Set<Integer> set1 = new HashSet<>();
+        for (int n : nums1) {
+            set1.add(n);
+        }
+
+        Set<Integer> resultSet = new HashSet<>();
+        for (int n : nums2) {
+            if (set1.contains(n)) {
+                resultSet.add(n);
             }
         }
-        int[] result = new int[arrayList.size()];
-        for (int i = 0; i < arrayList.size(); i++) {
-            result[i] = arrayList.get(i);
+
+        int[] result = new int[resultSet.size()];
+        int i = 0;
+        for (int val : resultSet) {
+            result[i++] = val;
         }
         return result;
     }
 }
-
 public class insertionofTwoarray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -37,9 +41,9 @@ public class insertionofTwoarray {
         for (int i = 0; i < n2; i++) {
             array2[i] = sc.nextInt();
         }
-        
-        InnerinsertionofTwoarray i = new InnerinsertionofTwoarray();
-        int[] result = i.intersection(array1, array2);
+        InnerinsertionofTwoarray helper = new InnerinsertionofTwoarray();
+        int[] result = helper.intersection(array1, array2);
+        System.out.println("Intersection of arrays:");
         for (int val : result) {
             System.out.print(val + " ");
         }
