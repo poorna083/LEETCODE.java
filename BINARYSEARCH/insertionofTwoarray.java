@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class InnerinsertionofTwoarray {
+class InnerinsertionofTwoarray {
     public int[] intersection(int[] array1, int[] array2) {
         
     }
@@ -19,5 +19,7 @@ public class insertionofTwoarray {
         for (int i = 0; i < array1.length; i++) {
             array2[i]=sc.nextInt();
         }
+        InnerinsertionofTwoarray i = new InnerinsertionofTwoarray();
+        System.out.println(i.intersection(array1, array2));
     }
 }
