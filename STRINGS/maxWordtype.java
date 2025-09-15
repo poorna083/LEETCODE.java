@@ -21,6 +21,6 @@ public class maxWordtype {
         String s = sc.nextLine();
         String broke = sc.nextLine();
         InnermaxWordtype i = new InnermaxWordtype();
-        i.maxwordtyppe(s, broke);
+        System.out.println(i.maxwordtyppe(s, broke));
     }
 }
