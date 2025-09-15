@@ -6,8 +6,9 @@ import java.util.Set;
         int count = 0;
         broke.toCharArray();
         for (int j = 0; j < broke.length(); j++) {
-            if(s.contains(broke(j)));
-            count ++;
+            if(s.contains(String.valueOf(broke.charAt(j)))) {
+                count ++;
+            }
         } 
         return count; 
     }
