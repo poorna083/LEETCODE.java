@@ -4,10 +4,9 @@ import java.util.Set;
  class InnermaxWordtype {
     public int maxwordtyppe(String s,String broke){
         Set<Character> st = new HashSet<>();
-            for (int i = 0; i < s.length(); i++) {
-            
-        };
-        
+        for (int j = 0; j < s.length(); j++) {
+            char c = s.charAt(j);
+        }  
     }
     
 }
