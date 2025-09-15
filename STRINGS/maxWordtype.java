@@ -1,7 +1,9 @@
 import java.util.Scanner;
  class InnermaxWordtype {
     public int maxwordtyppe(String s,String broke){
-        
+        for (int i = 0; i < s.length(); i++) {
+            
+        }
     }
     
 }
