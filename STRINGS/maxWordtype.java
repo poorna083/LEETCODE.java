@@ -4,8 +4,9 @@ import java.util.Set;
  class InnermaxWordtype {
     public int maxwordtyppe(String s,String broke){
         int count = 0;
-        for (int j = 0; j < s.length(); j++) {
-            if(s.contains(broke));
+        broke.toCharArray();
+        for (int j = 0; j < broke.length(); j++) {
+            if(s.contains(broke(j)));
             count ++;
         } 
         return count; 
