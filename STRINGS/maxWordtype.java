@@ -3,10 +3,12 @@ import java.util.Scanner;
 import java.util.Set;
  class InnermaxWordtype {
     public int maxwordtyppe(String s,String broke){
-        Set<Character> st = new HashSet<>();
+        int count = 0;
         for (int j = 0; j < s.length(); j++) {
-            char c = s.charAt(j);
-        }  
+            if(s.contains(broke));
+            count ++;
+        } 
+        return count; 
     }
     
 }
