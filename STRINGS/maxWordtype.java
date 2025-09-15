@@ -1,9 +1,13 @@
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
  class InnermaxWordtype {
     public int maxwordtyppe(String s,String broke){
-        for (int i = 0; i < s.length(); i++) {
+        Set<Character> st = new HashSet<>();
+            for (int i = 0; i < s.length(); i++) {
             
-        }
+        };
+        
     }
     
 }
