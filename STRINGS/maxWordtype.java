@@ -2,15 +2,22 @@ import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
  class InnermaxWordtype {
-    public int maxwordtyppe(String s,String broke){
+    public int canBeTypedWords(String text, String brokenLetters) {
+        String[] words = text.split(" ");
         int count = 0;
-        broke.toCharArray();
-        for (int j = 0; j < broke.length(); j++) {
-            if(s.contains(String.valueOf(broke.charAt(j)))) {
-                count ++;
+        for (String word : words) {
+            boolean canType = true;
+            for (char ch : brokenLetters.toCharArray()) {
+                if (word.indexOf(ch) != -1) { 
+                    canType = false;
+                    break;
+                }
             }
-        } 
-        return count; 
+            if (canType) {
+                count++;
+            }
+        }
+        return count;
     }
     
 }
