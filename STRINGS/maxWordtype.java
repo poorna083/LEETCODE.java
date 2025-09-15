@@ -1,6 +1,8 @@
 import java.util.Scanner;
  class InnermaxWordtype {
-    public int maxwordtyppe(String s,String broke);
+    public int maxwordtyppe(String s,String broke){
+        
+    }
     
 }
 
@@ -9,5 +11,7 @@ public class maxWordtype {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
         String broke = sc.nextLine();
+        InnermaxWordtype i = new InnermaxWordtype();
+        i.maxwordtyppe(s, broke);
     }
 }
