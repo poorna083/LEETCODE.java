@@ -28,5 +28,6 @@ public class noncoPrime {
         for (int i = 0; i < A.length; i++) {
             A[i]=sc.nextInt();
         }
+        InnernoncoPrime i = new InnernoncoPrime();
     }
 }
