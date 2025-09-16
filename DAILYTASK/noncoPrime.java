@@ -1,4 +1,8 @@
 import java.util.Scanner;
+ class InnernoncoPrime {
+    
+    
+}
 
 public class noncoPrime {
     public static void main(String[] args) {
