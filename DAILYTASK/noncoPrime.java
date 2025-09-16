@@ -29,5 +29,6 @@ public class noncoPrime {
             A[i]=sc.nextInt();
         }
         InnernoncoPrime i = new InnernoncoPrime();
+        System.out.println(i.replaceNonCoprimes(A));
     }
 }
