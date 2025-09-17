@@ -10,6 +10,7 @@ public class anagram1 {
         String s = sc.nextLine();
         String t = sc.nextLine();
         Inneranagram1 i1 = new Inneranagram1();
+        i1.isAnagram(s, t);
 
     }
 }
