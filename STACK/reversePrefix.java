@@ -22,5 +22,6 @@ public class reversePrefix {
         char c = sc.next().charAt(0);
         InnerreversePrefix ip = new InnerreversePrefix();
         ip.prefixReverse(s, c);
+        sc.close();
     }
 }
