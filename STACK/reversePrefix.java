@@ -2,7 +2,9 @@ import java.util.Scanner;
  class InnerreversePrefix {
     public String prefixReverse(String s,char c){
         for(int i=0;i<s.length();i++){
-            
+            if (s.charAt(i)==c) {
+                
+            }
         }
         StringBuffer sb = new StringBuffer(s);
 
