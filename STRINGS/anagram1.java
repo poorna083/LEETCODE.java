@@ -15,6 +15,8 @@ public class anagram1 {
         Scanner sc =new Scanner(System.in);
         String s = sc.nextLine();
         String t = sc.nextLine();
-        
+        Inneranagram1 i = new Inneranagram1();
+        i.isAnagram(s, t);
+
        }
 }
