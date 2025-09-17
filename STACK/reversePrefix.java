@@ -20,5 +20,7 @@ public class reversePrefix {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
         char c = sc.next().charAt(0);
+        InnerreversePrefix ip = new InnerreversePrefix();
+        ip.prefixReverse(s, c);
     }
 }
