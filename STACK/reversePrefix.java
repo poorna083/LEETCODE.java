@@ -1,18 +1,14 @@
 import java.util.Scanner;
- class InnerreversePrefix {
-    public String prefixReverse(String s,char c){
-        if (!s.contains(String.valueOf(c))) return s;
-        for(int i=0;i<s.length();i++){
-            if (s.charAt(i)==c) {
-                StringBuilder sb = new StringBuilder(s.substring(0, i + 1));
-                sb.reverse();
-                sb.append(s.substring(i + 1));   
-                return sb.toString();
-            }
-        }
-        return s;
+
+class InnerreversePrefix {
+    public String prefixReverse(String s, char c) {
+        int idx = s.indexOf(c); 
+        if (idx == -1) return s; 
+        StringBuilder sb = new StringBuilder(s.substring(0, idx + 1));
+        sb.reverse();
+        sb.append(s.substring(idx + 1));
+        return sb.toString();
     }
-    
 }
 
 public class reversePrefix {
@@ -21,7 +17,8 @@ public class reversePrefix {
         String s = sc.nextLine();
         char c = sc.next().charAt(0);
         InnerreversePrefix ip = new InnerreversePrefix();
-        ip.prefixReverse(s, c);
+        String result = ip.prefixReverse(s, c);
+        System.out.println(result);
         sc.close();
     }
 }
