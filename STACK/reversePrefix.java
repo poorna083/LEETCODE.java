@@ -2,8 +2,15 @@ import java.util.Scanner;
  class InnerreversePrefix {
     public String prefixReverse(String s,char c){
         if (!s.contains(String.valueOf(c))) return s;
-        StringBuffer sb = new StringBuffer(s);
-
+        for(int i=0;i<s.length();i++){
+            if (s.charAt(i)==c) {
+                StringBuilder sb = new StringBuilder(s.substring(0, i + 1));
+                sb.reverse();
+                sb.append(s.substring(i + 1));   
+                return sb.toString();
+            }
+        }
+        return s;
     }
     
 }
