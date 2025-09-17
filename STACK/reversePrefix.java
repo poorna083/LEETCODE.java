@@ -1,6 +1,8 @@
 import java.util.Scanner;
  class InnerreversePrefix {
-
+    public String prefixReverse(String s,char c){
+        
+    }
     
 }
 
