@@ -1,3 +1,3 @@
-public class pow(x,n) {
+public class power {
     
 }
