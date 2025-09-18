@@ -1,6 +1,9 @@
 import java.util.Scanner;
 class Innerpower {
-
+    public double myPow(double d, int n) {
+        Math.pow(d, n);
+        return myPow(d, n);
+    }
     
 }
 public class power {
