@@ -1,7 +1,11 @@
 import java.util.Scanner;
 class InnerbinarySearch {
     public int search(int[] nums, int target) {
-        
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i]==target){
+                return i;
+            }
+        }return 0;
     }
     
 }
@@ -17,5 +21,7 @@ public class binarySearch {
         }
         System.out.println("Enter The Target");
         int target = sc.nextInt();
+        InnerbinarySearch ib = new InnerbinarySearch();\
+        System.out.println(ib.search(nums, target));
     }
 }
