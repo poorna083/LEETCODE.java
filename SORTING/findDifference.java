@@ -1,6 +1,8 @@
 import java.util.Scanner;
 class InnerfindDifference {
-
+    public char findTheDifference(String s, String t) {
+        
+    }
     
 }
 public class findDifference {
