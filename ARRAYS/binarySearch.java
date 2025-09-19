@@ -21,7 +21,7 @@ public class binarySearch {
         }
         System.out.println("Enter The Target");
         int target = sc.nextInt();
-        InnerbinarySearch ib = new InnerbinarySearch();\
+        InnerbinarySearch ib = new InnerbinarySearch();
         System.out.println(ib.search(nums, target));
     }
 }
