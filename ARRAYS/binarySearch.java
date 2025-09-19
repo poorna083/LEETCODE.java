@@ -5,7 +5,7 @@ class InnerbinarySearch {
             if (nums[i]==target){
                 return i;
             }
-        }return 0;
+        }return -1;
     }
     
 }
