@@ -1,7 +1,18 @@
+import java.util.HashMap;
 import java.util.Scanner;
 class Innercountelementofhighfreq {
     public int maxFrequencyElements(int[] array) {
-        
+        boolean [] visited = new boolean[array.length];
+        for(int i=0;i<array.length;i++){
+            if (visited[i]) continue;
+            int count = 1;
+            for (int j = i + 1; j < array.length; j++) {
+                if (array[i] == array[j]) {
+                    count++;
+                    visited[j] = true;
+                }
+            }
+        }
     }
     
 }
