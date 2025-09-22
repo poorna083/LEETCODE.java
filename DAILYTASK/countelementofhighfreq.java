@@ -17,5 +17,6 @@ public class countelementofhighfreq {
         }
         Innercountelementofhighfreq i = new Innercountelementofhighfreq();
         System.out.println(i.maxFrequencyElements(array));
+        sc.close();
     }
 }
