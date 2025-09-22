@@ -1,18 +1,27 @@
-import java.util.HashMap;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Scanner;
+import java.util.Set;
+import java.util.HashMap;
 class Innercountelementofhighfreq {
     public int maxFrequencyElements(int[] array) {
-        boolean [] visited = new boolean[array.length];
-        for(int i=0;i<array.length;i++){
-            if (visited[i]) continue;
-            int count = 1;
-            for (int j = i + 1; j < array.length; j++) {
-                if (array[i] == array[j]) {
-                    count++;
-                    visited[j] = true;
-                }
-            }
+        HashMap<Integer, Integer> mp = new HashMap<>();
+        for (int num : array) {
+            mp.put(num, mp.getOrDefault(num, 0) + 1);
         }
+
+        int count = 0;
+        int maxFreq = Integer.MIN_VALUE;
+        for (int freq : mp.values()) {
+            maxFreq = Math.max(maxFreq, freq);
+        }
+
+        for (int freq : mp.values()) {
+            if (freq == maxFreq)
+                count += maxFreq;
+        }
+        return count;
     }
     
 }
@@ -27,7 +36,8 @@ public class countelementofhighfreq {
             array[i]=sc.nextInt();
         }
         Innercountelementofhighfreq i = new Innercountelementofhighfreq();
-        System.out.println(i.maxFrequencyElements(array));
+        int result = i.maxFrequencyElements(array);
+        System.out.println("Result: " + result);
         sc.close();
     }
 }
