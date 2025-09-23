@@ -1,19 +1,30 @@
 import java.util.Scanner;
 class InnerVersion{
     public int compareVersion(String version1, String version2) {
-        if (version1.isEmpty()||version2.isEmpty()) return 0;
-        StringBuffer sb = new StringBuffer(version1);
-        Character c1 = '.';
-        boolean contains = sb.indexOf(String.valueOf(c1))!= -1;
-        if (contains) {
+        int temp1 = 0, temp2 = 0;
+        int len1 = version1.length(), len2 = version2.length();
+        int i = 0, j = 0;
+        
+        while (i < len1 || j < len2) {
+            temp1 = 0;
+            temp2 = 0;
             
+            while (i < len1 && version1.charAt(i) != '.') {
+                temp1 = temp1 * 10 + (version1.charAt(i) - '0');
+                i++;
+            }
+            while (j < len2 && version2.charAt(j) != '.') {
+                temp2 = temp2 * 10 + (version2.charAt(j) - '0');
+                j++;
+            }
+            
+            if (temp1 > temp2) return 1;
+            if (temp1 < temp2) return -1;
+            
+            i++;
+            j++;
         }
-        StringBuffer sb1 = new StringBuffer(version2);
-        Character c2 = '.';
-        boolean contain = sb.indexOf(String.valueOf(c2))!= -1;
-        if(contain){
-
-        }
+        return 0;
     }
 }
 public class versions {
