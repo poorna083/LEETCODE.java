@@ -13,5 +13,6 @@ public class fractionRecurssion {
         int denominator = sc.nextInt();
         InnerfractionRecurssion i = new InnerfractionRecurssion();
         System.out.println(i.fractionToDecimal(numerator, denominator));
+        sc.close();
     }
 }
