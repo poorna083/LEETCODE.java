@@ -1,7 +1,8 @@
 import java.util.Scanner;
 class InnerdivisorGame{
     public boolean Divisor(int n){
-        
+        if(n%2==0)return true;
+        return false;
     }
 }
 
@@ -10,6 +11,6 @@ public class divisorGame {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         InnerdivisorGame i = new InnerdivisorGame();
-        i.Divisor(n);
+        System.out.println(i.Divisor(n));
     }
 }
