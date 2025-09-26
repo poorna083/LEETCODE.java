@@ -1,4 +1,8 @@
 import java.util.Scanner;
+class InnervalidTriangle {
+
+    
+}
 
 public class validTriangle {
     public static void main(String[] args) {
@@ -8,6 +12,6 @@ public class validTriangle {
        for (int i = 0; i < size; i++) {
         array[i]=sc.nextInt();
        } 
-       
+
     }
 }
