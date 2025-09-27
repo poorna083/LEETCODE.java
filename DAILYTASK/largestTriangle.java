@@ -29,6 +29,8 @@ public class largestTriangle {
                 array[i][j] = sc.nextInt();
             }
         }
+        InnerlargestTriangle i = new InnerlargestTriangle();
+        System.out.println(i.largestTriangleArea(array));
         sc.close();
     }
 }
