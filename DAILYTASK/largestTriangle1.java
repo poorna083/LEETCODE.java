@@ -4,7 +4,7 @@ class InnerlargestTriangle1 {
         Arrays.sort(array);
         for(int i = array.length-1; i>1; i--){
            if(array[i] < array[i-1] + array[i-2])
-               return  array[i] + array[i-1]+ array[i-2];   
+            return  array[i] + array[i-1]+ array[i-2];   
         }
         return 0;
     }
