@@ -14,7 +14,9 @@ class InnerlargestTriangle1 {
 public class largestTriangle1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.println("Enter The size of an array");
         int size = sc.nextInt();
+        System.out.println("enter The array Elements:");
         int [] array = new int[size];
         for (int i = 0; i < size; i++) {
             array[i]=sc.nextInt();
