@@ -1,13 +1,14 @@
 import java.util.*;
 class InnertriangulasSumofarray {
     public int triangleSum(int nums[]){
-        int sum;
         for(int i=0;i<nums.length;i++){
+            int sum;
             for(int j=0;j<nums.length;j++){
-                sum = nums[j]+nums[j+1];
+               sum = nums[j]+nums[j+1];
             }
+            return sum;
         }
-        return sum;
+        
     }
     
 }
@@ -23,5 +24,6 @@ public class triangulasSumofarray {
         }
         InnertriangulasSumofarray i = new InnertriangulasSumofarray();
         System.out.println(i.triangleSum(nums));
+        sc.close();
     }
 }
