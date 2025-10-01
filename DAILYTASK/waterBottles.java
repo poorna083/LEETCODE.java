@@ -1,13 +1,14 @@
 import java.util.Scanner;
 class InnerwaterBottles {
     public int numWaterbottle(int numbottle,int numExchange){
-            int count;
-            while (numExchange -- > 3) {
-                 count = numbottle;
-                if (numExchange % 4 == 0)  {
-                    count ++;
-            }
-        }return count; 
+            int totalBottles = numbottle;
+
+        while (numbottle >= numExchange) {
+            totalBottles += numbottle / numExchange;
+            numbottle = (numbottle / numExchange) + (numbottle % numExchange);
+        }
+
+        return totalBottles; 
     }
 }
 
