@@ -18,6 +18,7 @@ public class WaterBottle2 {
         int numBottle = sc.nextInt();
         int numExchange = sc.nextInt();
         InnerWaterBottle2 i = new InnerWaterBottle2();
-        
+        System.out.println(i.maxBottlesDrunk(numBottle, numExchange));
+        sc.close();
     }
 }
