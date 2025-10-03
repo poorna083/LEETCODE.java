@@ -19,6 +19,7 @@ public class excelSheet {
         int n = sc.nextInt();
         InnerexcelSheet i = new InnerexcelSheet();
         System.out.println(i.convertToTitle(n));
+        sc.close();
 
     }
 }
