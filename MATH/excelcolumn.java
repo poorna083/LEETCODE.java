@@ -14,7 +14,8 @@ public class excelcolumn {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
-
+        Innerexcelcolumn i = new Innerexcelcolumn();
+        System.out.println(i.titleToNumber(s));
         sc.close();
     }
 }
