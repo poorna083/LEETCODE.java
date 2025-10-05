@@ -18,5 +18,6 @@ public class firstoccurancestring {
         String needle = sc.nextLine();
         Innerfirstoccurancestring i = new Innerfirstoccurancestring();
         System.out.println(i.strStr(heystack, needle));
+        sc.close();
     }
 }
