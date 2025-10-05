@@ -16,5 +16,7 @@ public class firstoccurancestring {
         Scanner sc = new Scanner(System.in);
         String heystack = sc.nextLine();
         String needle = sc.nextLine();
+        Innerfirstoccurancestring i = new Innerfirstoccurancestring();
+        System.out.println(i.strStr(heystack, needle));
     }
 }
