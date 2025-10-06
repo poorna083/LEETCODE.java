@@ -1,10 +1,15 @@
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 class InnerthirdMaximumNumber {
 public int thirdmax(int [] nums){
-    for(int i=nums.length;i<=1;i--){
-        System.out.println(nums[i]);
-    }
+   Integer[] numsObj = Arrays.stream(nums).boxed().toArray(Integer[]::new);
+   Arrays.sort(numsObj, Collections.reverseOrder());
+   
+
 }
     
 }
