@@ -1,7 +1,10 @@
+import java.util.Arrays;
 import java.util.Scanner;
 class InnerthirdMaximumNumber {
 public int thirdmax(int [] nums){
-
+    for(int i=nums.length;i<=1;i--){
+        System.out.println(nums[i]);
+    }
 }
     
 }
