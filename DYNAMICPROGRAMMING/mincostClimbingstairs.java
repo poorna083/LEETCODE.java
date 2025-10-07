@@ -16,5 +16,7 @@ public class mincostClimbingstairs {
             cost[i]=sc.nextInt();
         }
         sc.close();
+        InnermincostClimbingstairs i = new InnermincostClimbingstairs();
+        System.out.println(i.mincostclimbingStairs(cost));
     }
 }
