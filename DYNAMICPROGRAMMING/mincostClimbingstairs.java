@@ -1,6 +1,8 @@
 import java.util.*;
 class InnermincostClimbingstairs {
-
+    public int mincostclimbingStairs(int [] cost){
+        
+    }
     
 }
 public class mincostClimbingstairs {
