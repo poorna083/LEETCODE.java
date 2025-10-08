@@ -15,6 +15,8 @@ public class moveZeros {
         for(int i=0;i<size;i++){
             nums[i]= sc.nextInt();
         }
+        InnermoveZeros i = new InnermoveZeros();
+        System.out.println(i.movezeros(nums));
 
     }
 }
