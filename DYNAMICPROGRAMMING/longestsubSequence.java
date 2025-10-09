@@ -29,5 +29,6 @@ public class longestsubSequence {
         }
         InnerlongestsubSequence i = new InnerlongestsubSequence();
         System.out.println(i.getLongestSubsequence(words, groups));
+        sc.close();
     }
 }
