@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.util.List;
+import java.util.ArrayList;
 class InnerlongestsubSequence {
     public List<String> getLongestSubsequence(String[] words, int[] groups) {
         List<String> result = new ArrayList<>();
@@ -17,13 +19,13 @@ public class longestsubSequence {
         Scanner sc = new Scanner(System.in);
         int size1 = sc.nextInt();
         int size2 = sc.nextInt();
-        int [] words = new int[size1];
-        int [] groups = new int[size2];
+        String[] words = new String[size1];
+        int[] groups = new int[size2];
         for (int i = 0; i < words.length; i++) {
-            array1[i]=sc.nextInt();
+            words[i] = sc.next();
         }
         for (int i = 0; i < groups.length; i++) {
-            array2[i]=sc.nextInt();
+            groups[i] = sc.nextInt();
         }
         InnerlongestsubSequence i = new InnerlongestsubSequence();
         System.out.println(i.getLongestSubsequence(words, groups));
