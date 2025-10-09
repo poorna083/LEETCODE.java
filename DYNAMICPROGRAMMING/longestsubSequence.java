@@ -14,7 +14,7 @@ class InnerlongestsubSequence {
         return result;
     }
 }
-public class longestsubSequence {
+public class LongestsubSequence {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int size1 = sc.nextInt();
