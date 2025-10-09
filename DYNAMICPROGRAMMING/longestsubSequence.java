@@ -17,13 +17,15 @@ public class longestsubSequence {
         Scanner sc = new Scanner(System.in);
         int size1 = sc.nextInt();
         int size2 = sc.nextInt();
-        int [] array = new int[size1];
-        int [] array1 = new int[size2];
-        for (int i = 0; i < array1.length; i++) {
+        int [] words = new int[size1];
+        int [] groups = new int[size2];
+        for (int i = 0; i < words.length; i++) {
             array1[i]=sc.nextInt();
         }
-        for (int i = 0; i < array2.length; i++) {
+        for (int i = 0; i < groups.length; i++) {
             array2[i]=sc.nextInt();
         }
+        InnerlongestsubSequence i = new InnerlongestsubSequence();
+        System.out.println(i.getLongestSubsequence(words, groups));
     }
 }
