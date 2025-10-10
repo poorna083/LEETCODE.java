@@ -1,13 +1,5 @@
-/** 
- * Forward declaration of guess API.
- * @param  num   your guess
- * @return 	     -1 if num is higher than the picked number
- *			      1 if num is lower than the picked number
- *               otherwise return 0
- * int guess(int num);
- */
+import java.util.Scanner;
 
-// Dummy GuessGame class for compilation
 class GuessGame {
     private int pickedNumber;
 
@@ -22,40 +14,34 @@ class GuessGame {
     }
 }
 
-public class Solution extends GuessGame {
+class Solution extends GuessGame {
     public Solution(int pickedNumber) {
         super(pickedNumber);
     }
 
-import java.util.Scanner;
+    public int guessNumber(int n) {
+        int low = 1;
+        int high = n;
+        while (low <= high) {
+            int mid = low + (high - low) / 2;
+            int result = guess(mid);
+            if (result == 0) return mid;
+            else if (result == -1) high = mid - 1;
+            else low = mid + 1;
+        }
+        return -1;
+    }
+}
 
 public class guessNumber {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter The upper bound (n):");
+        System.out.print("Enter the upper bound (n): ");
         int n = sc.nextInt();
-        System.out.println("Enter the picked number:");
+        System.out.print("Enter the picked number: ");
         int picked = sc.nextInt();
         Solution solution = new Solution(picked);
         System.out.println("Guessed number: " + solution.guessNumber(n));
-    }
-}
-            } else if (result == -1) {
-                high = mid - 1;
-            } else {
-                low = mid + 1;
-            }
-        }
-        
-        return -1;
-    }
-}
-public class guessNumber {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter The number:");
-        int n = sc.nextInt();
-        InnerguessNumber i = new InnerguessNumber();
-        System.out.println(i.numberguessing(n));
+        sc.close();
     }
 }
