@@ -33,15 +33,17 @@ class Solution extends GuessGame {
     }
 }
 
-public class guessNumber {
+public class GuessNumber {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the upper bound (n): ");
         int n = sc.nextInt();
         System.out.print("Enter the picked number: ");
         int picked = sc.nextInt();
+
         Solution solution = new Solution(picked);
         System.out.println("Guessed number: " + solution.guessNumber(n));
+
         sc.close();
     }
 }
