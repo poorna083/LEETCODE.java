@@ -36,8 +36,8 @@ public class InnerislandPerimiter {
 public class islandPerimiter {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int size = sc.nextInt();
-        int [] [] grid = new int[size][size];
+        int Size = sc.nextInt();
+        int [] [] grid = new int[Size][Size];
         for(int i=0;i<grid.length;i++){
             for(int j=0;j<grid[i].length;j++){
                 grid[i][j]=sc.nextInt();
