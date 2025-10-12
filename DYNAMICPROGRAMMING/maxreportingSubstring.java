@@ -1,18 +1,26 @@
 import java.util.Scanner;
-class MaxreportingSubstring{
-    public int maxRepeting(String Sequence, String word){
-        
-            char[] seq = Sequence.toCharArray();
-        
+
+class MaxRepeatingSubstring {
+    public int maxRepeating(String sequence, String word) {
+        int count = 0;
+        String temp = word;
+        while (sequence.contains(temp)) {
+            count++;
+            temp += word;
+        }
+        return count;
     }
 }
+
 public class maxreportingSubstring {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String Sequence = sc.nextLine();
+        String sequence = sc.nextLine();
         String word = sc.nextLine();
-        MaxreportingSubstring i = new MaxreportingSubstring();
-        System.out.println(i.maxRepeting(Sequence, word));
+
+        MaxRepeatingSubstring obj = new MaxRepeatingSubstring();
+        System.out.println(obj.maxRepeating(sequence, word));
+
         sc.close();
     }
 }
