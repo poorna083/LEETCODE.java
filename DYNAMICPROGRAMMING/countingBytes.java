@@ -1,7 +1,7 @@
 import java.util.*;
 class InnercountingBytes{
     public int [] counting(int [] array){
-        int[] f = new int[array + 1];
+        int[] f = new int[array.length + 1];
     for (int i=1; i<=array.length; i++) f[i] = f[i >> 1] + (i & 1);
     return f;
     }
