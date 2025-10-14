@@ -1,7 +1,8 @@
 import java.util.*;
 class InnerincreasingSubarrays{
     public boolean hasIncreasingSubarrays(List<Integer> list ,int k){
-
+        int size = list.size();
+        
     }
 }
 public class increasingSubarrays {
