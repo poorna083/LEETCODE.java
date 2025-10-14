@@ -30,7 +30,7 @@ public class increasingSubarrays {
         }
         int k = sc.nextInt();
         sc.close();
-        InnerincreasingSubarrays i = new InnerincreasingSubarrays();
+        InnerIncreasingSubarrays i = new InnerIncreasingSubarrays();
         System.out.println(i.hasIncreasingSubarrays(list, k));
 
 
