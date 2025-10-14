@@ -1,26 +1,22 @@
 import java.util.*;
-class InnerincreasingSubarrays{
-    public boolean hasIncreasingSubarrays(List<Integer> list ,int k){
-        int size = list.size();
-        List <Integer> firsthalf = new ArrayList<>();
-        List <Integer> Secondhalf = new ArrayList<>();
-        for(int i=0;i<size/2;i++){
-            firsthalf.add(list.get(i));
+class InnerIncreasingSubarrays {
+    public boolean hasIncreasingSubarrays(List<Integer> list, int k) {
+        int n = list.size();
+        for (int a = 0; a + 2 * k <= n; a++) {
+            if (isIncreasing(list, a, a + k - 1) && 
+                isIncreasing(list, a + k, a + 2 * k - 1)) {
+                return true;
+            }
         }
-        for(int i=size/2;i<size;i++){
-            Secondhalf.add(list.get(i));
+        return false;
+    }
+    private boolean isIncreasing(List<Integer> list, int start, int end) {
+        for (int i = start; i < end; i++) {
+            if (list.get(i) >= list.get(i + 1)) {
+                return false;
+            }
         }
-        for(int i=0;i<k;i++){
-            if(firsthalf.get(i) == k) return true;
-            else return false;
-        }
-        for(int i=0;i<k;i++){
-            if(Secondhalf.get(i) == k) return true;
-            else return false;
-        }
-        
-
-
+        return true;
     }
 }
 public class increasingSubarrays {
