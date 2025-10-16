@@ -1,30 +1,41 @@
 import java.util.Scanner;
-class Innersmallestmissing{
-    public int missingvalue(int [] array , int value){
-        java.util.HashSet<Integer> set = new java.util.HashSet<>();
-        for (int v : array) {
-            if (v > 0) set.add(v);
+
+class Innersmallestmissing {
+    public int missingvalue(int[] array) {
+        int n = array.length;
+        for (int i = 0; i < n; i++) {
+            if (array[i] <= 0 || array[i] > n) {
+                array[i] = n + 1;
+            }
         }
-        for (int i = 1; i <= array.length + 1; i++) {
-            if (!set.contains(i)) return i;
+        for (int i = 0; i < n; i++) {
+            int val = Math.abs(array[i]);
+            if (val <= n) {
+                array[val - 1] = -Math.abs(array[val - 1]);
+            }
         }
-        return 1;
+        for (int i = 0; i < n; i++) {
+            if (array[i] > 0) {
+                return i + 1;
+            }
+        }
+        return n + 1;
     }
 }
 
 public class smallestmissing {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter The size:");
+        System.out.println("Enter the size:");
         int size = sc.nextInt();
-        System.out.println("Enter The array:");
-        int [] array = new int[size];
-        for(int i=0;i<size;i++){
-            array[i]=sc.nextInt();
+
+        int[] array = new int[size];
+        System.out.println("Enter the array:");
+        for (int i = 0; i < size; i++) {
+            array[i] = sc.nextInt();
         }
-        System.out.println("Enter The value:");
-        int value = sc.nextInt();
-        Innersmallestmissing i = new Innersmallestmissing();
-        System.out.println(i.missingvalue(array, value));
+
+        Innersmallestmissing obj = new Innersmallestmissing();
+        System.out.println("Smallest missing positive number: " + obj.missingvalue(array));
     }
 }
