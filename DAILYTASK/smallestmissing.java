@@ -1,41 +1,31 @@
 import java.util.Scanner;
 
 class Innersmallestmissing {
-    public int missingvalue(int[] array) {
-        int n = array.length;
-        for (int i = 0; i < n; i++) {
-            if (array[i] <= 0 || array[i] > n) {
-                array[i] = n + 1;
-            }
+    public int missingvalue(int[] nums, int value) {
+        int[] rem = new int[value];
+        for (int x : nums) {
+            int r = ((x % value) + value) % value;
+            rem[r]++;
         }
-        for (int i = 0; i < n; i++) {
-            int val = Math.abs(array[i]);
-            if (val <= n) {
-                array[val - 1] = -Math.abs(array[val - 1]);
-            }
-        }
-        for (int i = 0; i < n; i++) {
-            if (array[i] > 0) {
-                return i + 1;
-            }
-        }
-        return n + 1;
+        int res = 0;
+        while (rem[res % value]-- > 0) res++;
+        return res;
     }
 }
 
 public class smallestmissing {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the size:");
+        System.out.print("Enter the size: ");
         int size = sc.nextInt();
-
         int[] array = new int[size];
-        System.out.println("Enter the array:");
+        System.out.println("Enter the array elements:");
         for (int i = 0; i < size; i++) {
             array[i] = sc.nextInt();
         }
-
+        System.out.print("Enter the value: ");
+        int value = sc.nextInt();
         Innersmallestmissing obj = new Innersmallestmissing();
-        System.out.println("Smallest missing positive number: " + obj.missingvalue(array));
+        System.out.println("Smallest missing positive number: " + obj.missingvalue(array, value));
     }
 }
