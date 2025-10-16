@@ -1,14 +1,14 @@
 import java.util.Scanner;
 class Innersmallestmissing{
     public int missingvalue(int [] array , int value){
-        for(int i=0;i<array.length;i++){
-            while(array[i]<0){
-                array[i]=value;
-                if(array[i]>0) break;
-            }
-            array[i]=array[i]-value;
-            
+        java.util.HashSet<Integer> set = new java.util.HashSet<>();
+        for (int v : array) {
+            if (v > 0) set.add(v);
         }
+        for (int i = 1; i <= array.length + 1; i++) {
+            if (!set.contains(i)) return i;
+        }
+        return 1;
     }
 }
 
