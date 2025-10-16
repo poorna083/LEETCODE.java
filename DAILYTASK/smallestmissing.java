@@ -2,9 +2,12 @@ import java.util.Scanner;
 class Innersmallestmissing{
     public int missingvalue(int [] array , int value){
         for(int i=0;i<array.length;i++){
-            while(array[i]>0){
+            while(array[i]<0){
                 array[i]=value;
+                if(array[i]>0) break;
             }
+            array[i]=array[i]-value;
+            
         }
     }
 }
