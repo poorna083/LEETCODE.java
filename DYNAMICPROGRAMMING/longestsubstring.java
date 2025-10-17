@@ -41,5 +41,6 @@ public class longestsubstring {
         String s = sc.nextLine();
         Innerlongestsubstring i = new Innerlongestsubstring();
         System.out.println(i.longestPalindrome(s));
+        sc.close();
     }
 }
