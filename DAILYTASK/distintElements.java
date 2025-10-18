@@ -24,6 +24,9 @@ public class distintElements {
         for (int i = 0; i < size; i++) {
             nums[i]=sc.nextInt();
         }
+        int k = sc.nextInt();
         sc.close();
+        InnerdistintElements i = new InnerdistintElements();
+        System.out.println(i.maxDistinctElements(nums, k));
     }
 }
