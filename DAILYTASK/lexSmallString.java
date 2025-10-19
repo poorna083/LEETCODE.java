@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.*;
 class InnerlexSmallString{
     public String findLexSmallestString(String s, int a, int b) {
         Set<String> vis = new HashSet<>();
