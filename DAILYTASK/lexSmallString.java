@@ -29,5 +29,7 @@ public class lexSmallString {
         String s = sc.nextLine();
         int a = sc.nextInt();
         int b = sc.nextInt();
+        InnerlexSmallString i = new InnerlexSmallString();
+        System.out.println(i.findLexSmallestString(s, a, b));
     }
 }
