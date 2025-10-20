@@ -1,5 +1,8 @@
 import java.util.Scanner;
+class InnervalueVariable {
 
+    
+}
 public class valueVariable {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
