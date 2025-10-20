@@ -20,6 +20,6 @@ public class valueVariable {
         String [] operations = new String[s.length()];
         InnervalueVariable i = new InnervalueVariable();
         System.out.println(i.finalValueAfterOperations(operations));
-        
+        sc.close();
     }
 }
