@@ -31,5 +31,7 @@ public class maxFrequency {
         for(int i=0;i<size;i++) nums[i]=sc.nextInt();
         int k = sc.nextInt();
         int noOfoperations = sc.nextInt();
+        InnermaxFrequency i = new InnermaxFrequency();
+        System.out.println(i.maxFrequency(nums, k, noOfoperations));
     }
 }
