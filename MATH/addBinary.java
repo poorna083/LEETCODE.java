@@ -1,5 +1,8 @@
 import java.util.Scanner;
+class InneraddBinary {
 
+    
+}
 public class addBinary {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
