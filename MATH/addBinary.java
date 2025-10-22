@@ -25,5 +25,8 @@ public class addBinary {
         Scanner sc = new Scanner(System.in);
         String a = sc.nextLine();
         String b = sc.nextLine();
+        InneraddBinary i = new InneraddBinary();
+        System.out.println(i.addBinary(a, b));
+        sc.close();
     }
 }
