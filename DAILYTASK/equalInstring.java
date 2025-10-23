@@ -20,5 +20,7 @@ public class equalInstring {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
+        InnerequalInstring i = new InnerequalInstring();
+        System.out.println(i.hasSameDigits(s));
     }
 }
