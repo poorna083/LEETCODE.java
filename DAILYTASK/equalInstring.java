@@ -22,5 +22,6 @@ public class equalInstring {
         String s = sc.nextLine();
         InnerequalInstring i = new InnerequalInstring();
         System.out.println(i.hasSameDigits(s));
+        sc.close();
     }
 }
