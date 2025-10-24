@@ -1,7 +1,6 @@
 import java.util.Scanner;
 import java.util.*;
 class InnernextGenerator {
-    class Solution {
     public int nextBeautifulNumber(int n) {
         List<Integer> list = new ArrayList<>();
         generate(0, new int[10], list);
@@ -33,10 +32,11 @@ class InnernextGenerator {
     }
 }
     
-}
 public class nextGenerator {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
+        InnernextGenerator i = new InnernextGenerator();
+        System.out.println(i.nextBeautifulNumber(n));
     }
 }
