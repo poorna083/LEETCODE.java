@@ -15,5 +15,7 @@ public class arrangeCoins {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter The N:");
         int n = sc.nextInt();
+        InnerarrangeCoins i = new InnerarrangeCoins();
+        System.out.println(i.arrangeCoins(n));
     }
 }
