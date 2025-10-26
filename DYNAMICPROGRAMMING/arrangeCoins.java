@@ -17,5 +17,6 @@ public class arrangeCoins {
         int n = sc.nextInt();
         InnerarrangeCoins i = new InnerarrangeCoins();
         System.out.println(i.arrangeCoins(n));
+        sc.close();
     }
 }
