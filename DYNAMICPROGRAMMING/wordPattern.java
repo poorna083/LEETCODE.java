@@ -31,5 +31,6 @@ public class wordPattern {
         String s = sc.nextLine();
         InnerwordPattern i = new InnerwordPattern();
         System.out.println(i.wordpattern(pattern, s));
+        sc.close();
     }
 }
