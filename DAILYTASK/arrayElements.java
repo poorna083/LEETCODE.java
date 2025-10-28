@@ -22,5 +22,7 @@ public class arrayElements {
         for (int i = 0; i < size; i++) {
             array[i]=sc.nextInt();
         }
+        InnerarrayElements i = new InnerarrayElements();
+        System.out.println(i.countValidSelections(array));
     }
 }
