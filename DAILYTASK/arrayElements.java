@@ -1,5 +1,8 @@
 import java.util.Scanner;
+class InnerarrayElements {
 
+    
+}
 public class arrayElements {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
