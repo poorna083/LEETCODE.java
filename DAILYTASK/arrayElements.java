@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 class InnerarrayElements {
     public int countValidSelections(int[] nums) {
         int len = nums.length, count = 0, left = 0;
