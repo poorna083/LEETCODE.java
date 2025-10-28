@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.*;
 class InnerwordPattern {
     public boolean wordPattern(String pattern, String s) {
         String[] words = s.split(" ");
