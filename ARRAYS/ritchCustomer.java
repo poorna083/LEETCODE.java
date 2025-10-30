@@ -1,5 +1,8 @@
 import java.util.*;
+class InnerritchCustomer {
 
+    
+}
 public class ritchCustomer {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
