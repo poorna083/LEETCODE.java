@@ -1,7 +1,6 @@
 import java.util.*;
 class InnersneekyNumbers {
     public int[] getSneakyNumbers(int[] nums){
-        public int[] getSneakyNumbers(int[] nums) {
         int xor = 0;
         int n = nums.length - 2;
 
@@ -22,8 +21,6 @@ class InnersneekyNumbers {
 
         return new int[]{a, b};
     }
-    }
-    
 }
 public class sneekyNumbers {
     public static void main(String[] args) {
