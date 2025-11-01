@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.*;
 class InnergenerateParanthesis {
     public List<String> generateParenthesis(int n) {
         List<String> res = new ArrayList<String>();
@@ -26,5 +27,7 @@ public class generateParanthesis {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
+        InnergenerateParanthesis i = new InnergenerateParanthesis();
+        System.out.println(i.generateParenthesis(n));
     }
 }
