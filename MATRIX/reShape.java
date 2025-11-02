@@ -20,5 +20,7 @@ public class reShape {
         }
         int r = sc.nextInt();
         int c = sc.nextInt();
+        InnerreShape i = new InnerreShape();
+        System.out.println(i.matrixReshape(mat, r, c));
     }
 }
