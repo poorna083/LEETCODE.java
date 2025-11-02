@@ -2,7 +2,12 @@ package MATRIX;
 
 import java.util.Arrays;
 import java.util.Scanner;
-
+class InnerreShape {
+    public int[][] matrixReshape(int[][] mat, int r, int c) {
+        
+    }
+    
+}
 public class reShape {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -13,8 +18,7 @@ public class reShape {
                 mat[i][j]=sc.nextInt();
             }
         }
-        for (int i = 0; i < mat.length; i++) {
-            System.out.println(Arrays.toString(mat));
-        }
+        int r = sc.nextInt();
+        int c = sc.nextInt();
     }
 }
