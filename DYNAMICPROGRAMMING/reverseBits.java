@@ -14,6 +14,9 @@ public class reverseBits {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
+        InnerreverseBits i = new InnerreverseBits();
+        System.out.println(i.reverseBits(n));
+        sc.close();
         
 }
 }
