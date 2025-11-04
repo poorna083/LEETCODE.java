@@ -54,5 +54,7 @@ public class klongArrays {
         }
         int k = sc.nextInt();
         int x = sc.nextInt();
+        InnerklongArrays i = new InnerklongArrays();
+        System.out.println(i.findXSum(nums, k, x));
     }
 }
