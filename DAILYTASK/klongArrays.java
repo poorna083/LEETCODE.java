@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.*;
 class InnerklongArrays {
     public int[] findXSum(int[] nums, int k, int x) {
         int n = nums.length;
