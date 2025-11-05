@@ -36,5 +36,7 @@ public class relativeRanks {
         for(int i=0;i<size;i++){
             nums[i]=sc.nextInt();
         }
+        InnerrelativeRanks i = new InnerrelativeRanks();
+        System.out.println(i.findRelativeRanks(nums));
     }
 }
