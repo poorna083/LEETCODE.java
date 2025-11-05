@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.*;
 class InnerrelativeRanks {
     public String[] findRelativeRanks(int[] score) {
         
