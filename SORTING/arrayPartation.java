@@ -22,5 +22,6 @@ public class arrayPartation {
         }
         InnerarrayPartation i = new InnerarrayPartation();
         System.out.println(i.arrayPairSum(nums));
+        sc.close();
     }
 }
