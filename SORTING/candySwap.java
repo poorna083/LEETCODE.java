@@ -49,6 +49,7 @@ public class candySwap {
         for(int i=0;i<alicesize;i++)alice[i]=sc.nextInt();
         InnercandySwap i = new InnercandySwap();
         System.out.println(i.fairCandySwap(alice, bob));
+        sc.close();
 
     }
 }
