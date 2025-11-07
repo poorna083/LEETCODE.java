@@ -47,6 +47,8 @@ public class candySwap {
         int [] alice = new int[alicesize];
         for(int i=0;i<bobsize;i++) bob[i]=sc.nextInt();
         for(int i=0;i<alicesize;i++)alice[i]=sc.nextInt();
+        InnercandySwap i = new InnercandySwap();
+        System.out.println(i.fairCandySwap(alice, bob));
 
     }
 }
