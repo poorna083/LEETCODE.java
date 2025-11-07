@@ -1,5 +1,8 @@
 import java.util.Scanner;
+class InnercandySwap {
 
+    
+}
 public class candySwap {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
