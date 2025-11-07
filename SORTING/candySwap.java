@@ -15,7 +15,7 @@ class InnercandySwap {
         return -1;
     }
     
-    public int[] fairCandySwap(int[] a, int[] b) { //a = Alice , b=Bob
+    public int[] fairCandySwap(int[] alice, int[] bob) { 
 
         int suma=0,sumb=0;
         for(int i = 0; i < a.length; i++)
