@@ -1,6 +1,8 @@
 import java.util.Scanner;
 class InnercandySwap {
-
+    public int[] fairCandySwap(int[] alice, int[] bob) {
+        
+    }
     
 }
 public class candySwap {
