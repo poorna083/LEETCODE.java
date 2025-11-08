@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.*;
 class InnerheightChecker {
     public int heightChecker(int[] heights) {
         int[] expected = heights.clone();
@@ -20,5 +21,7 @@ public class heightChecker {
         for(int i=0;i<size;i++){
             array[i]=sc.nextInt();
         }
+    InnerheightChecker i = new InnerheightChecker();
+    System.out.println(i.heightChecker(array));
     }
 }
