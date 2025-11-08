@@ -23,5 +23,6 @@ public class heightChecker {
         }
     InnerheightChecker i = new InnerheightChecker();
     System.out.println(i.heightChecker(array));
+    sc.close();
     }
 }
