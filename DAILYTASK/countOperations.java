@@ -3,8 +3,9 @@ class InnercountOperations {
     public int CountTheOperations(int num1,int num2){
         int count = 0;
         while(num1-num2==0){
-
+            count++;
         }
+        return count;
     }
     
 }
