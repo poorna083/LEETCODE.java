@@ -21,5 +21,6 @@ public class countOperations {
         int num2 = sc.nextInt();
         InnercountOperations i = new InnercountOperations();
         System.out.println(i.CountTheOperations(num1, num2));
+        sc.close();
     }
 }
