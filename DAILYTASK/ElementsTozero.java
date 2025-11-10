@@ -1,5 +1,8 @@
 import java.util.Scanner;
+class InnerElementsTozero {
 
+    
+}
 public class ElementsTozero {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
