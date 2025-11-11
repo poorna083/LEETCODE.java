@@ -22,5 +22,7 @@ public class harmogeniousSequence {
         int [] nums = new int[size];
         for(int i=0;i<size;i++)nums[i]=sc.nextInt();
         sc.close();
+        InnerharmogeniousSequence i = new InnerharmogeniousSequence();
+        System.out.println(i.findLHS(nums));
     }
 }
