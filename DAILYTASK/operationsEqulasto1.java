@@ -15,5 +15,6 @@ public class operationsEqulasto1 {
         }
         InneroperationsEqulasto1 i = new InneroperationsEqulasto1();
         System.out.println(i.minOperations(nums));
+        sc.close();
     }
 }
