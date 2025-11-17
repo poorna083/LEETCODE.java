@@ -24,6 +24,8 @@ public class onesLength {
         int [] nums = new int[size];
         for(int i=0;i<size;i++)nums[i]=sc.nextInt();
         int k = sc.nextInt();
+        InneronesLength i = new InneronesLength();
+        System.out.println(i.kLengthApart(nums, k));
 
     }
 }
