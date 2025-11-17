@@ -26,6 +26,7 @@ public class onesLength {
         int k = sc.nextInt();
         InneronesLength i = new InneronesLength();
         System.out.println(i.kLengthApart(nums, k));
+        sc.close();
 
     }
 }
