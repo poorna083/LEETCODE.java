@@ -16,5 +16,7 @@ public class bitCharacters {
         int [] bits = new int[size];
         for(int i=0;i<size;i++) bits[i]=sc.nextInt();
         sc.close();
+        InnerbitCharacters i = new InnerbitCharacters();
+        System.out.println(i.isOneBitCharacter(bits));
     }
 }
