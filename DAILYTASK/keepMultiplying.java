@@ -1,9 +1,15 @@
 import java.util.Scanner;
 class InnerkeepMultiplying {
     public int keepmultiply(int [] nums,int key){
-        while () {
-            
+         int bits = 0;
+        for (int num : nums) {
+            if (num % key != 0) continue;
+            int n = num / key;
+            if ((n & (n - 1)) == 0)
+                bits |= n;
         }
+        bits++;
+        return key * (bits & -bits);
     }
     
 }
