@@ -15,5 +15,6 @@ public class keepMultiplying {
         int key = sc.nextInt();
         InnerkeepMultiplying i = new InnerkeepMultiplying();
         System.out.println(i.keepmultiply(nums, key));
+        sc.close();
     }
 }
