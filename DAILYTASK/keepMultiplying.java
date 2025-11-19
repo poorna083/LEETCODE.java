@@ -1,7 +1,9 @@
 import java.util.Scanner;
 class InnerkeepMultiplying {
     public int keepmultiply(int [] nums,int key){
-
+        while () {
+            
+        }
     }
     
 }
