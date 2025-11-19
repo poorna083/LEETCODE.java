@@ -13,5 +13,7 @@ public class keepMultiplying {
         for(int i=0;i<size;i++)
         nums[i]=sc.nextInt();
         int key = sc.nextInt();
+        InnerkeepMultiplying i = new InnerkeepMultiplying();
+        System.out.println(i.keepmultiply(nums, key));
     }
 }
