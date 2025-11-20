@@ -25,5 +25,6 @@ public class teemoAttacking {
         int duration = sc.nextInt();
         InnerteemoAttacking i = new InnerteemoAttacking();
         System.out.println(i.findPoisonedDuration(nums, duration));
+        sc.close();
     }
 }
