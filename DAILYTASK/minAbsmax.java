@@ -37,7 +37,7 @@ public class minAbsmax {
             }
         }
         InnerminAbsmax i = new InnerminAbsmax();
-        System.out.println(i.absminmax(grid, k));
+        System.out.println(i.minAbsmax(grid, k));
         sc.close();
     }
 }
